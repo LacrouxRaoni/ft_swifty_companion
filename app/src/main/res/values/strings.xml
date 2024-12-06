@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">swift_companion</string>
+    <string name="subtitle">42 logo</string>
+    <string name="main_text">Type 42 user login:</string>
+
 </resources>
