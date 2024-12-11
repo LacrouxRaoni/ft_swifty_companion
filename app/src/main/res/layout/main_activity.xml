@@ -7,16 +7,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="217dp"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
-            android:layout_marginTop="120dp"
-            android:scaleType="centerInside"
-            android:contentDescription="@string/subtitle"
-            android:src="@drawable/ft_logo"
             android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:contentDescription="@string/subtitle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ft_logo"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
@@ -24,25 +25,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/main_text"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:gravity="center" />
+
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Digite algo aqui"
-            android:inputType="text"
-            android:padding="10dp" />
+
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/etBlinkingInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="user login"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/custom_input_background" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Send"
+        android:textStyle="bold"
+        />
+
 </LinearLayout>
